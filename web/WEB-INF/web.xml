@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <servlet-name>AddApartment</servlet-name>
+        <servlet-class>servlets.AddApServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddApartment</servlet-name>
+        <url-pattern>/AddApServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>AllApartmentServlet</servlet-name>
+        <servlet-class>servlets.GetAllApServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AllApartmentServlet</servlet-name>
+        <url-pattern>/ShowAllAps</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DelApartment</servlet-name>
+        <servlet-class>servlets.DelApServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DelApartment</servlet-name>
+        <url-pattern>/DelApServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FindByPrice</servlet-name>
+        <servlet-class>servlets.FindByPrServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FindByPrice</servlet-name>
+        <url-pattern>/FindByPrServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>

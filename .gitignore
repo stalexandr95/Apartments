@@ -1,0 +1,6 @@
+/src/main/resources/
+/src/test/
+/target/
+/TryDAO.iml
+/.idea/
+/lib/
